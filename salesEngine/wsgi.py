@@ -1,5 +1,5 @@
 """
-WSGI config for salesEngineBackend project.
+WSGI config for salesEngine project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'salesEngineBackend.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'salesEngine.settings')
 
 application = get_wsgi_application()
