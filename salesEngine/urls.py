@@ -17,7 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path('api/v1/', include('technologies.urls')),
+#     path('api/v1/', include('pseudoProfiles.urls')),
+# ]
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', include('technologies.urls')),
+    path('api/v1/technologies/', include('technologies.urls')),
+    path('api/v1/pseudo-profiles/', include('pseudoProfiles.urls')),
 ]
